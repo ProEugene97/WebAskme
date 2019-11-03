@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "node_modules/bootstrap/dist/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "public/css/my_css.css" %}">
+
+    <title>AskPupkin</title>
+  </head>
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md fixed-top badge-light navbar-light">
+          <div class="col-md-8">
+            <div class="row">
+            <a class="title navbar-brand col-md-3 font-weight-bolder" href="#">Ask Pupkin</a>
+            <div class=" collapse navbar-collapse" id="navbarCollapse">
+              <form class="form-inline mt-5 mt-md-0 ml-2">
+                <input class="form-control mr-md-2 nav-link" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success nav-link my-9 my-md-1" type="submit">Search</button>
+              </form>
+              <a href="#" class="ml-5 btn btn-success nav-link .text-medium-center">Ask!</a>
+            </div>
+  
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="row">            
+              <div>
+                <a href="#">
+                  <img src="public/png/bird.jpg" alt="Logo" style="width:40px;">
+                </a>
+              </div>
+              <div class="ml-5">
+                <div class="row">
+                  Dr.Pepper
+                </div>
+                <div class="row">
+                  <span>
+                    <a href="#">settings</a>
+                  </span>
+                  <span class="ml-2">
+                    <a href="#">log out</a>
+                  </span>
+                </div>              
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- https://getbootstrap.com/docs/4.3/layout/grid/
+    https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/ -->
+    <div class="container main-content">
+      <div class="row">
+           <div class="col-md-3">
+            <div class="container">
+                  <span><h2>New Questions</h2></span>
+                </div>
+           </div>
+           <div class="col-md-3 mt-2">
+            <div class="container">
+                  <span><h5><a href="#">Hot Questions</a></h5></span>
+                </div>
+           </div>           
+         </div>
+         <div class="row">
+            <div class="col-md-8">
+                <div class="question">
+                    <div class="row">
+                        <div class="col-2">
+                          <div style="height:140px;background: #aaa;"> Fake Image</div>
+              
+                        </div>
+                        <div class="col-10 mb-4">
+                            <h2><a href="" class="href">My question</a></h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium eius incidunt consequatur? Sed sit ipsum quis, deserunt, mollitia et id corrupti laudantium consequuntur perferendis distinctio exercitationem! Est, beatae quasi.
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm ml-5 mr-5">4</button>
+                        <span class="mt-0 ml-3 mr-5" style="padding-top: 6px"><a href="" >answers (3)</a></span>
+                        <span class="mt-0 ml-3">Tags: <a href="#" class="badge badge-info">build</a>, <a href="#" class="badge badge-primary">C++</a></span>                        
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="row">
+                        <div class="col-2">
+                          <div style="height:140px;background: #aaa;"> Fake Image</div>
+              
+                        </div>
+                        <div class="col-10 mb-4">
+                            <h2><a href="" class="href">My question</a></h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium eius incidunt consequatur? Sed sit ipsum quis, deserunt, mollitia et id corrupti laudantium consequuntur perferendis distinctio exercitationem! Est, beatae quasi.
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm ml-5 mr-5">4</button>
+                        <span class="mt-0 ml-3 mr-5" style="padding-top: 6px"><a href="" >answers (3)</a></span>
+                        <span class="mt-0 ml-3">Tags: <a href="#" class="badge badge-info">build</a>, <a href="#" class="badge badge-primary">C++</a></span>                        
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="row">
+                        <div class="col-2">
+                          <div style="height:140px;background: #aaa;"> Fake Image</div>
+              
+                        </div>
+                        <div class="col-10 mb-4">
+                            <h2><a href="" class="href">My question</a></h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium eius incidunt consequatur? Sed sit ipsum quis, deserunt, mollitia et id corrupti laudantium consequuntur perferendis distinctio exercitationem! Est, beatae quasi.
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm ml-5 mr-5">4</button>
+                        <span class="mt-0 ml-3 mr-5" style="padding-top: 6px"><a href="" >answers (3)</a></span>
+                        <span class="mt-0 ml-3">Tags: <a href="#" class="badge badge-info">build</a>, <a href="#" class="badge badge-primary">C++</a></span>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class=".text-medium-center">
+                <h2>Popular Tags</h2>
+              </div>
+              <div class="mt-2 p-3">
+              <a href="#" class="badge badge-primary">C</a>
+              <a href="#" class="badge badge-secondary">C++</a>
+              <a href="#" class="badge badge-success">Java</a>
+              <a href="#" class="badge badge-danger">android</a>
+              <a href="#" class="badge badge-warning">ios</a>
+              <a href="#" class="badge badge-info">css</a>
+              <a href="#" class="badge badge-light">r</a>
+              <a href="#" class="badge badge-dark">html</a>
+              </div>
+              <div class=".text-medium-center">
+                <h2>Best Members</h2>
+              </div>
+              <p><a href="#">Cambridge Analytica</a></p>
+              <p><a href="#">Ilon Musk</a></p>
+              <p><a href="#">Intel</a></p>
+              <p><a href="#">Mr.Freem</a></p>
+            </div>          
+        </div>
+    </div>
+     <ul class="pagination justify-content-center mt-5">
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+      </ul>
+      <div class="jumbotron text-center mt-5" style="margin-bottom:0">
+        <p>Footer</p>
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    {% load staticfiles %}
+    <script src="{% static "node_modules/jquery/jquery.min.js" %}"></script>
+    <script src="{% static "node_modules/popper.js/dist/popper.min.js" %}"></script>
+    <script src="{% static "node_modules/bootstrap/dist/js/bootstrap.min.js" %}"></script>
+
+  </body>
+</html>

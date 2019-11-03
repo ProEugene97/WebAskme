@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  <div id="ask" class="question">
+      <div class="row">
+          <div class="col-2">
+            <div style="height:140px;background: #aaa;"> Fake Image</div>
+
+          </div>
+          <div class="col-10 mb-4">
+              <h2>{{ question.title }}</h2>
+                  {{ question.text }}
+          </div>
+          <div class="mt-1">
+          <button type="button" class="btn btn-primary btn-sm ml-5 mr-5">{{ question.likes.all.count }}</button>
+          <span class="mt-0 ml-3">Tags: 
+            {% for tag in  question.tags.all %} 
+            <a href="{{ tag.get_url }}" class="badge badge-info">{{ tag }}</a>
+            {% endfor %}
+            </span>
+            </div>                        
+      </div>
+  </div>
+  <hr>
+  {% for answer in question.answer_set.all %}
+  <div class="question">
+      <div class="row">
+          <div class="col-2">
+            <div style="height:140px;background: #aaa;"> Fake Image</div>
+
+          </div>
+          <div class="col-10 mb-4">
+              {{ answer }}
+          </div>
+          <button type="button" class="btn btn-primary btn-sm ml-5 mr-5 mt-3">4</button>
+          <div class="form-check mt-4 ml-2">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">Correct!
+            </label>
+          </div>                    
+      </div>
+  </div>
+  {% endfor %}
+  <hr>
+  <div class="container">
+    <form action="#">
+      <div class="form-group">
+        <textarea class="form-control" rows="7" id="comment" placeholder="Enter your answer" name="text"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Answer!</button>
+    </form>
+  </div>
+{% endblock content %}

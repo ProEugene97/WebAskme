@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+
+{% block content %} 
+    <div class="container">
+      <h2 class="mb-5">Registration</h2>
+    </div>
+     <p class="ml-3 mb-3" style="color: red">Sorry, this email adress already registred</p>
+    <div class="row">
+    <div class="col-md-2">  
+    <div class="container">               
+      <div class="input-group-prepend mb-4">
+            <span class="input-group-text">Login</span>
+      </div>
+      <div class="input-group-prepend mb-4">
+            <span class="input-group-text">Email</span>
+      </div>
+      <div class="input-group-prepend mb-4">
+            <span class="input-group-text">NickName</span>
+      </div>
+      <div class="input-group-prepend mb-4">
+            <span class="input-group-text">Password</span>
+      </div>
+      <div class="input-group-prepend mb-4">
+            <span class="input-group-text">Repeat password</span>
+      </div>
+      <div class="input-group-prepend mb-4">
+            <span class="input-group-text">UploadAvatar</span>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-7"> 
+    <div class="container ml-5">
+      <form action="" class="needs-validation" novalidate>
+        <div class="input-group mb-4">
+          <input type="text" class="form-control" value="dr_pepper">                    
+        </div>
+        <div class="input-group mb-4">
+          <input type="email" class="form-control" value="dr.pepper@mail.ru">                    
+        </div>
+        <div class="input-group mb-4">
+          <input type="text" class="form-control" value="Dr. Pepper">                    
+        </div>
+        <div class="input-group mb-4">
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>                  
+        </div>
+        <div class="input-group mb-4">
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>                  
+        </div>
+        <div class="input-group mb-4">
+          <input class="mt-2" type="file" name="img" multiple>                   
+        </div>
+        <button type="submit" class="btn btn-primary">Register!</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock content %} 
+            

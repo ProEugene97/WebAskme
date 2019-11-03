@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block title %} 
+<div class="row">
+     <div class="col-md-3">
+      <div class="container">
+            <span><h2>New Questions</h2></span>
+          </div>
+     </div>
+     <div class="col-md-3 mt-2">
+      <div class="container">
+            <span><h5><a href="/hot/">Hot Questions</a></h5></span>
+          </div>
+     </div>           
+   </div>
+{% endblock title %}
+
+
+{% block content %}
+{% for question in  questions %}
+  {% include "question_base.html" %}
+{% endfor%}
+{% endblock content %}
+
+
+{% block down %}
+{% include "paginator.html" %}
+{% endblock down %}

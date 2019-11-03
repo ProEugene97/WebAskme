@@ -1,0 +1,21 @@
+<div class="question">
+    <div class="row">
+        <div class="col-2">
+          <div style="height:140px;background: #aaa;"> Fake Image</div>
+        </div>
+        <div class="col-10 mb-4">
+            <h2><a class="href" href="{{ question.get_url }}">{{ question }} </a></h2>
+            {{ question.text}}
+        </div>
+        <div class='mt-1'>
+        <button type="button" class="btn btn-primary btn-sm ml-5 mr-5">{{ question.likes.all.count }}</button>
+        
+        <span class="mt-0 ml-3 mr-5" style="padding-top: 6px">answers ({{ question.answer_set.all.count }})</span>
+        <span class="mt-0 ml-3">Tags:
+        {% for tag in  question.tags.all %} 
+          <a href="{{ tag.get_url }}" class="badge badge-info">{{ tag }}</a>
+        {% endfor %}
+        </span>
+        </div>                        
+    </div>
+</div>
